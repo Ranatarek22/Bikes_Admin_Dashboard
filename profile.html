@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الملف الشخصى</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column w-100 profile" style="margin-bottom: 10%">
+      <h5 class="text-muted">
+        <a href="#" onclick="loadPage('home.html')">
+          <img src="./images/ArrowRight.png"
+        /></a>
+        العوده للرئيسيه
+      </h5>
+      <h2>الملف الشخصى</h2>
+      <div class="d-flex h-75 w-75 flex-row border-radius-lg profile-card">
+        <div class="w-100">
+          <div class="input-field w-100 bg-transparent" id="username">
+            Ahmed Samir
+          </div>
+
+          <div class="input-field w-100 bg-transparent" id="email">
+            abdo @gmail .com
+          </div>
+
+          <div
+            class="input-field w-100 bg-transparent"
+            id="phone"
+            style="direction: rtl"
+          >
+            +966 798 328 129
+          </div>
+
+          <div class="input-field w-100 bg-transparent" id="bank">
+            الحساب البنكي (IBAN)
+          </div>
+          <button type="button" class="btn btn-dark w-25">حفظ</button>
+        </div>
+      </div>
+    </div>
+    <script src="/jss/main.js"></script>
+  </body>
+</html>
