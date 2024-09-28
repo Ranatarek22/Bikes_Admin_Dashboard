@@ -6,6 +6,44 @@
     <title>Document</title>
   </head>
   <body>
-    <div>bikes</div>
+    <div class="d-flex flex-column justify-content-end w-100 profile">
+      <h5 class="text-muted">
+        <a href="#" onclick="loadPage('home.html')">
+          <img src="./images/ArrowRight.png"
+        /></a>
+        العوده للرئيسيه
+      </h5>
+      <h2>دراجاتى</h2>
+      <div class="d-flex flex-column flex-md-row border-radius-lg profile-card">
+        <div class="w-100 m-2">
+          <div
+            class="d-flex flex-row p-3 bike"
+            style="background: var(--linear-color1)"
+          >
+            <span class="mx-2 fw-bold fs-3">07</span>
+            <p class="fs-4 text-muted">مؤجره</p>
+          </div>
+        </div>
+        <div class="w-100 m-2">
+          <div
+            class="d-flex flex-row p-3 bike"
+            style="background: var(--linear-color2)"
+          >
+            <span class="mx-2 fw-bold fs-3">03</span>
+            <p class="fs-4 text-muted">جاهز للتأجير</p>
+          </div>
+        </div>
+        <div class="w-100 m-2">
+          <div
+            class="d-flex flex-row p-3 bike"
+            style="background: var(--linear-color3)"
+          >
+            <span class="mx-2 fw-bold fs-3">15</span>
+            <p class="fs-4 text-muted">قيد التجهيز</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/jss/main.js"></script>
   </body>
 </html>

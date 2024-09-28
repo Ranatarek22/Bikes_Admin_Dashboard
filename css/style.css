@@ -14,6 +14,24 @@
     rgba(208.14, 217, 240.53, 0.94) 62%,
     #e9eff4 100%
   );
+  --linear-color1: linear-gradient(
+    90deg,
+    #d5f5d5 0%,
+    #ffffff 62%,
+    #e9eff4 100%
+  );
+  --linear-color2: linear-gradient(
+    90deg,
+    #f6e4c2 0%,
+    #ffffff 62%,
+    #e9eff4 100%
+  );
+  --linear-color3: linear-gradient(
+    90deg,
+    #e9c9c9 0%,
+    #ffffff 62%,
+    #e9eff4 100%
+  );
   --background-grad: linear-gradient(105deg, #aec2d2 0%, #f8fcff 100%);
   --Danger-color: #f16673;
 }
@@ -117,6 +135,13 @@ main {
   color: var(--font-color);
   border-radius: 8px;
 }
+.bike {
+  box-shadow: 104px 104px 104px;
+  border-radius: 16px;
+}
+.profile {
+  margin-top: 5%;
+}
 @media (max-width: 768px) {
   #main-content {
     width: 100%;
@@ -124,5 +149,9 @@ main {
   }
   .profile {
     align-items: center;
+    margin-top: 0;
+  }
+  .profile-card {
+    width: 100%;
   }
 }
