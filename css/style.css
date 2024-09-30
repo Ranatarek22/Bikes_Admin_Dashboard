@@ -32,6 +32,12 @@
     #ffffff 62%,
     #e9eff4 100%
   );
+  /* new color gradient */
+  --white-glass: linear-gradient(
+    258deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   --background-grad: linear-gradient(105deg, #aec2d2 0%, #f8fcff 100%);
   --Danger-color: #f16673;
 }
@@ -88,11 +94,11 @@ main {
   color: var(--font-color);
 }
 .profile-card {
-  background: linear-gradient(
-    258deg,
+  /* background: linear-gradient(
+    90deg,
     rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+    rgba(255, 255, 255, 0.5) 0%
+  ); */
   box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   border: none;
@@ -136,7 +142,7 @@ main {
   border-radius: 8px;
 }
 .bike {
-  box-shadow: 104px 104px 104px;
+  /* box-shadow: 104px 104px 104px; */
   border-radius: 16px;
 }
 .profile {
@@ -149,9 +155,14 @@ main {
   }
   .profile {
     align-items: center;
-    margin-top: 0;
+    /* margin-top: 0; */
   }
   .profile-card {
     width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .mobile-nav + * {
+    margin-top: 30%;
   }
 }
