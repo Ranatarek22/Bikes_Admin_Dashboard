@@ -85,9 +85,9 @@ body {
 .row > div {
   direction: rtl;
 }
-main {
+/* main {
   padding-top: 20px;
-}
+} */
 
 #sidebar .nav-item:hover {
   background: var(--linear-color);
@@ -133,9 +133,9 @@ main {
   text-align: justify;
   border-radius: 8px;
 }
-.dropdown-menu + * {
+/* .dropdown-menu + * {
   margin-bottom: 20%;
-}
+} */
 .dropdown-menu .dropdown-item:hover {
   background: var(--linear-color);
   color: var(--font-color);
