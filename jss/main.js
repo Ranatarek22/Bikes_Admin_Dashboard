@@ -32,11 +32,14 @@ function loadPage(page) {
 function adjustLayout() {
   const sidebar = document.getElementById("sidebar");
   const mobileNav = document.getElementById("mobile-nav");
+  // let main = document.getElementsByClassName("main-large");
 
+  console.log(main.innerHTML);
   if (window.innerWidth < 769) {
     sidebar.classList.remove("d-flex");
     sidebar.style.display = "none";
     mobileNav.classList.remove("d-none");
+  
   } else {
     sidebar.classList.add("d-flex");
     sidebar.style.display = "flex";
