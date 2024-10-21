@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>انشاء حساب</title>
+  </head>
+  <body>
+    <div class="p-2">
+      <img src="./images/logo.png" alt="logo" />
+    </div>
+    <div>
+      <div
+        class="d-flex flex-column w-100 profile align-items-center justify-content-center"
+        style="margin-bottom: 10%"
+      >
+        <h2>قم بإنشاء حسابك الآن</h2>
+        <div
+          class="d-flex h-75 bg-white flex-row border-radius-lg profile-card"
+        >
+          <div class="w-100">
+            <p class="mb-4">
+              قم بإدخال رمز التحقق الذي وصل على بريدك الإلكتروني
+            </p>
+            <form id="verificationForm">
+              <div class="d-flex justify-content-center gap-2 mb-4">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control code-input"
+                  required
+                />
+              </div>
+              <div class="d-flex justify-content-center gap-2">
+                <button type="submit" class="btn btn-primary submit-btn">
+                  الرجوع
+                </button>
+                <button type="submit" class="btn btn-primary submit-btn">
+                  التحقق من الرمز
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="m-2">
+          <span>هل لديك حساب </span>
+          <a href="http://" style="color: #331a9c">تسجيل الدخول </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("profileForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (form.checkValidity() === false) {
+          e.stopPropagation();
+          alert("Please fill out all required fields correctly.");
+        } else {
+          alert("Form submitted successfully!");
+        }
+
+        form.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>
